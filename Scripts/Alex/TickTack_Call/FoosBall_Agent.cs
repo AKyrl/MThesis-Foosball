@@ -23,12 +23,6 @@ public class FoosBall_Agent : Agent
 
     BehaviorParameters Behaviors;
 
-    //private new void Awake()
-    //{
-    //    Behaviors = this.GetComponent<BehaviorParameters>();
-    //    SetBehaviorParameters(ActionType);
-    //}
-
     // Start is called before the first frame update
     void Start()
     {
@@ -53,7 +47,6 @@ public class FoosBall_Agent : Agent
     {
         sensor.AddObservation(RodController.GetPosition_norm());
         sensor.AddObservation(RodController.GetRotation());
-        //sensor.AddObservation(BallController.GetNormalizedPosition(this.transform.position.x));
         sensor.AddObservation(BallController.GetNormalizedPosition());
     }
 
@@ -224,5 +217,13 @@ public class FoosBall_Agent : Agent
                 break;
         }
     }
+
+    internal void SetBehaviorType(BehaviorType behaviorType)
+    {
+        Behaviors = this.GetComponent<BehaviorParameters>();
+
+        Behaviors.BehaviorType = behaviorType;
+    }
+
 }
 

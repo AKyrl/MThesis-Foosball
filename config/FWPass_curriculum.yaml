@@ -1,0 +1,127 @@
+default_settings: null
+behaviors:
+  FP_DCCM:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 3096
+      buffer_size: 20480
+      learning_rate: 0.004
+      beta: 3.0e-05
+      epsilon: 0.2
+      lambd: 0.97
+      num_epoch: 10
+      learning_rate_schedule: linear
+      beta_schedule: linear
+      epsilon_schedule: constant
+    network_settings:
+      normalize: true
+      hidden_units: 128
+      num_layers: 2
+      vis_encode_type: simple
+      memory: null
+      goal_conditioning_type: hyper
+      deterministic: false
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 9.98
+    init_path: null
+    keep_checkpoints: 10
+    checkpoint_interval: 1000000
+    max_steps: 30000000
+    time_horizon: 992
+    summary_freq: 50000
+    threaded: true
+    self_play: null
+    behavioral_cloning: null
+env_settings:
+  env_path: C:\Users\Alex\Downloads\ml-agents-release_19\myEnvs\foos_3Dcore.exe
+  env_args: null
+  base_port: 5005
+  num_envs: 10 #6
+  num_areas: 8
+  seed: -1
+  max_lifetime_restarts: 10
+  restarts_rate_limit_n: 1
+  restarts_rate_limit_period_s: 60
+engine_settings:
+  width: 84
+  height: 84
+  quality_level: 2
+  time_scale: 1
+  target_frame_rate: -1
+  capture_frame_rate: 60
+  no_graphics: true
+environment_parameters: 
+  enemy: 
+    curriculum:
+      - name: Non_factor
+        completion_criteria:
+          measure: reward
+          behavior: FP_DCCM
+          signal_smoothing: true
+          min_lesson_length: 200
+          threshold: 25
+        value: 0
+      # - name: Corner
+        # completion_criteria:
+          # measure: reward
+          # behavior: FP_DCCM
+          # signal_smoothing: true
+          # min_lesson_length: 150
+          # threshold: 20
+        # value: 1
+      - name: Static
+        completion_criteria:
+          measure: reward
+          behavior: FP_DCCM
+          signal_smoothing: true
+          min_lesson_length: 200
+          threshold: 25
+        value: 
+          sampler_type: uniform
+          sampler_parameters:
+            min_value: 0
+            max_value: 2
+      - name: Rythmic
+        completion_criteria:
+          measure: reward
+          behavior: FP_DCCM
+          signal_smoothing: true
+          min_lesson_length: 200
+          threshold: 22
+        value: 
+          sampler_type: uniform
+          sampler_parameters:
+            min_value: 0
+            max_value: 3
+      - name: Random
+        completion_criteria:
+          measure: reward
+          behavior: FP_DCCM
+          signal_smoothing: true
+          min_lesson_length: 150
+          threshold: 20
+        value: 
+          sampler_type: uniform
+          sampler_parameters:
+            min_value: 0
+            max_value: 4
+      - name: All
+        value:
+          sampler_type: uniform
+          sampler_parameters:
+            min_value: 0
+            max_value: 5
+checkpoint_settings:
+  run_id: FP_DCCM_1.5
+  initialize_from: null
+  load_model: false
+  resume: false
+  force: false
+  train_model: false
+  inference: false
+  results_dir: results
+torch_settings:
+  device: cuda
+debug: false

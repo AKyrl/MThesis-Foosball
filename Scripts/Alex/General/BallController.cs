@@ -81,7 +81,6 @@ public class BallController : MonoBehaviour
     public void SetVelocity(Vector3 v)
     {
         rb.velocity = v;
-
     }
 
     public void SetAngularVelocity(Vector3 v)

@@ -8969,9 +8969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84077c19c0554535937b4aaccdcf126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angularSpeed: 1000
-  min: 4.365201
-  max: 5.665808
 --- !u!54 &278979260
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16526,9 +16523,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84077c19c0554535937b4aaccdcf126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angularSpeed: 1000
-  min: 4.365201
-  max: 5.665808
 --- !u!54 &506726001
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18636,9 +18630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84077c19c0554535937b4aaccdcf126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angularSpeed: 1000
-  min: 4.365201
-  max: 5.665808
 --- !u!54 &561227296
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26479,9 +26470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84077c19c0554535937b4aaccdcf126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angularSpeed: 1000
-  min: 4.365201
-  max: 5.665808
 --- !u!54 &825112031
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35032,8 +35020,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16b62e463c63ef4cbd0051e4c535115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ActionType: 2
+  scene: 0
+  FP_ActionType: 2
+  FP_BehaviorType: 0
   Speed: 5000
+  EnemyType: 0
 --- !u!4 &1083642648
 Transform:
   m_ObjectHideFlags: 0
@@ -36521,9 +36512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84077c19c0554535937b4aaccdcf126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angularSpeed: 1000
-  min: 4.365201
-  max: 5.665808
 --- !u!54 &1117035828
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41565,9 +41553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84077c19c0554535937b4aaccdcf126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angularSpeed: 1000
-  min: 4.365201
-  max: 5.665808
 --- !u!54 &1260963042
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -62063,9 +62048,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84077c19c0554535937b4aaccdcf126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angularSpeed: 1000
-  min: 4.365201
-  max: 5.665808
 --- !u!54 &1838800481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -79152,7 +79134,7 @@ MonoBehaviour:
   Agent: {fileID: 8398886961965153442}
   Player1: {fileID: 6795212539314179541}
   Player2: {fileID: 1335147977203769967}
-  testing: 1
+  testing: 0
   Maxcounter: 100
   difficulty: 0
 --- !u!114 &8117779984012219645
@@ -79554,8 +79536,8 @@ GameObject:
   - component: {fileID: 8398886961965153447}
   - component: {fileID: 8398886961965153446}
   - component: {fileID: 8398886961965153445}
-  - component: {fileID: 8398886961965153444}
   - component: {fileID: 8398886961965153443}
+  - component: {fileID: 8398886961965153448}
   m_Layer: 0
   m_Name: Black_5_Man_Rod
   m_TagString: Agent
@@ -79579,21 +79561,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!114 &8398886961965153444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8398886961965153442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84077c19c0554535937b4aaccdcf126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  angularSpeed: 1000
-  min: 4.365201
-  max: 5.665808
 --- !u!114 &8398886961965153445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79657,6 +79624,21 @@ MonoBehaviour:
   m_UseChildActuators: 1
   m_DeterministicInference: 0
   m_ObservableAttributeHandling: 0
+--- !u!114 &8398886961965153448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8398886961965153442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b314a89dfa56c34ab72dc51c4e631c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularSpeed: 1000
+  min: 4.381382
+  max: 5.6832
 --- !u!4 &8402386715959385992
 Transform:
   m_ObjectHideFlags: 0

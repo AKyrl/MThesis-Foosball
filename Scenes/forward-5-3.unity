@@ -23832,6 +23832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16b62e463c63ef4cbd0051e4c535115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene: 1
   FP_ActionType: 3
   FP_BehaviorType: 0
   Speed: 5000
@@ -86186,7 +86187,7 @@ MonoBehaviour:
   Trigger: {fileID: 1746613433}
   Target: {fileID: 657893962}
   Lane: {fileID: 1098515780}
-  testing: 1
+  testing: 0
   Maxcounter: 100
 --- !u!114 &8117779984012219645
 MonoBehaviour:

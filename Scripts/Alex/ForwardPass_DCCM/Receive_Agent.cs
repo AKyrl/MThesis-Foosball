@@ -30,15 +30,8 @@ public class Receive_Agent : Agent
         // this rod observations
         sensor.AddObservation(thisRodController.GetPosition_norm());
         sensor.AddObservation(thisRodController.GetRotation());
-        //// Enemy rod observations
-        //sensor.AddObservation(EnemyRodController.GetPosition());
-        //sensor.AddObservation(EnemyRodController.GetRotation());
-        // Target rod observations
-        //sensor.AddObservation(PassRodController.GetPosition_norm());
-        //sensor.AddObservation(PassRodController.GetRotation());
-
+        
         // Add the normalized Ball Position (x,y)
-        //sensor.AddObservation(BallController.GetNormalizedPosition(this.transform.position.x));
         sensor.AddObservation(BallController.GetNormalizedPosition());
     }
 

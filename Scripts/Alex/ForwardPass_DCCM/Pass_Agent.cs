@@ -40,8 +40,6 @@ public class Pass_Agent : Agent
         thisRodController = this.GetComponent<RodController>();
 
         EnemyRodController = RodEnemy.GetComponent<RodController>();
-
-
     }
 
     public override void OnEpisodeBegin()
@@ -60,12 +58,8 @@ public class Pass_Agent : Agent
         // Enemy rod observations
         sensor.AddObservation(EnemyRodController.GetPosition_norm());
         sensor.AddObservation(EnemyRodController.GetRotation());
-        // Target rod observations
-        //sensor.AddObservation(TargetRodController.GetPosition_norm());
-        //sensor.AddObservation(TargetRodController.GetRotation());
 
         // Add the normalized Ball Position (x,y)
-        //sensor.AddObservation(BallController.GetNormalizedPosition(this.transform.position.x));
         sensor.AddObservation(BallController.GetNormalizedPosition());
     }
 

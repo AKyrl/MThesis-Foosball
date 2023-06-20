@@ -1,0 +1,11 @@
+activate thesis
+cd Downloads\ml-agents-release_19\results\ForwardPass
+mlagents-learn C:\Users\Alex\Downloads\ml-agents-release_19\config\ppo\FWPass_curriculum.yaml
+
+
+mlagents-learn C:\Users\Alex\Downloads\ml-agents-release_19\config\sac\forward_pass.yaml  
+
+
+activate thesis
+cd Downloads\ml-agents-release_19\results\ForwardPass
+tensorboard --logdir results --port 6006

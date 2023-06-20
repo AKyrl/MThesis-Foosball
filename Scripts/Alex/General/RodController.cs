@@ -28,9 +28,6 @@ public class RodController : MonoBehaviour
         Init_rot_z = transform.localEulerAngles.z;
     }
 
-    void Update() {
-
-    }
     public float GetPosition_norm()
     {
         return Mathf.Clamp( (transform.localPosition.y - min) / (max - min), 0f, 1f);
