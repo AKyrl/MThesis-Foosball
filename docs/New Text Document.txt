@@ -9,3 +9,10 @@ mlagents-learn C:\Users\Alex\Downloads\ml-agents-release_19\config\sac\forward_p
 activate thesis
 cd Downloads\ml-agents-release_19\results\ForwardPass
 tensorboard --logdir results --port 6006
+
+
+refs:
+
+https://sowmyavoona96.github.io/csci527/TP%20(2).pdf
+https://dl.acm.org/doi/pdf/10.5555/3455716.3455897
+https://www.immersivelimit.com/tutorials/ml-agents-platformer-curriculum-training-for-an-advanced-puzzle
