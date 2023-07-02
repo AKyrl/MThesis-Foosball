@@ -1,0 +1,39 @@
+DCCS:
+testing done! with difficulty: none
+Times lost: 9
+Average Touches: 54.63
+
+testing done! with difficulty: easy
+Times lost: 10
+Average Touches: 53.3
+
+testing done! with difficulty: medium
+Times lost: 6
+Average Touches: 57.38
+
+testing done! with difficulty: hard
+Times lost: 6
+Average Touches: 56.69
+
+testing done! with difficulty: ultra
+Times lost: 6
+Average Touches: 54.75
+
+-----------------------------------------------------------------
+
+testing done! with difficulty: none
+Times lost: 3
+Average Touches: 85.05
+
+
+testing done! with difficulty: easy
+Times lost: 7
+Average Touches: 61.7
+
+testing done! with difficulty: medium
+Times lost: 1
+Average Touches: 101.5
+
+testing done! with difficulty: hard
+Times lost: 4
+Average Touches: 84.5

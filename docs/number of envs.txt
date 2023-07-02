@@ -1,0 +1,9 @@
+20 24: 61 45 1 min/50000 no episode completed a lot 
+10 24: 40 37 much faster steps more gpu usage
+5 24 : 40 30 faster more episodes per 50k 50s maybe less
+1 24 : 30 27 60-70s slower more episodes per 50k 
+6 16 : 50 54 60s/50k 
+6 20 : 60 50 50s/50k better ForwardPass. 
+6 8  : up to 100 60 60s/50k 
+2 8  : 40 50 slower 
+10 8 : 70 60
