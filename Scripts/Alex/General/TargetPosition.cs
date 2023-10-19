@@ -13,5 +13,6 @@ public class TargetPosition : MonoBehaviour
         float realX = x * (maxX - minX) + minX;
         float realY = y * (maxY - minY) + minY;
         transform.localPosition = new Vector3(realX, realY, transform.localPosition.z);
+
     }
 }

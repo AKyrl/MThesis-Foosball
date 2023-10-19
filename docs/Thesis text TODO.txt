@@ -1,0 +1,38 @@
+Intro feedback: 
+	why is it an important problem to solve (to actually improve the real life robotic implementations factories or other automations) 
+	add related work kicker or simpler RL for shooting we tackle the harder problems - discreet actions seem to work well 
+	add small summary of conclusions discreet action actually perform better dccs actually good middle ground. 
+
+
+
+
+
+
+Good ones:
+FP_DCCM_1.5
+FP_DCCS_1.6
+
+
+
+
+
+
+
+
+
+rest:
+robustness: noise
+learnability: training, reaction to different enemies
+reactiveness: performance vs enemies
+
+cont: just shoot hope it gets there, (not consistatly reacting to other types of players)
+	 learned to mainly middle pass
+
+DCCM: slow "just shoot" wall pass slowest
+DCCM-8999: a bit weird just use above
+
+DCCS-999151: slow but reacts mainly just shoot seems to try both corner and mid pass
+DCCS-1999603: better one, waits for agent to move in static cases 2nd slowest. kinda just corner pass shoot and hope
+
+Descreet: fast and both mid and corner pass. waits for agent to get out of the way in static. kinda jurky moves waits good rythimic "collect back is fun"
+

@@ -64,7 +64,7 @@ public class Rewards_TT : MonoBehaviour
                     break; 
                 case Dificulty.easy: //forward and back moves easy to keep in controll
                     {
-                        controller.speed = 0.2f;
+                        controller.speed = 0.2f; //4m/s (mass of 0,05kg)
                         if (fa.StepCount == (int)(fa.MaxStep / 4) )
                             controller.AddForce(Vector3.forward);
                         else if(fa.StepCount == (int)(fa.MaxStep / 3) )
@@ -75,7 +75,7 @@ public class Rewards_TT : MonoBehaviour
                     }
                 case Dificulty.medium: //left and right moves a bit harder 
                     {
-                        controller.speed = 0.08f;
+                        controller.speed = 0.08f; //1.6m/s (mass of 0,05kg)
                         if (fa.StepCount == (int)(fa.MaxStep / 4))
                             controller.AddForce(Vector3.left);
                         else if (fa.StepCount == (int)(fa.MaxStep / 3))
@@ -86,7 +86,7 @@ public class Rewards_TT : MonoBehaviour
                     }
                 case Dificulty.hard: // 10 times random left or right
                     {
-                        controller.speed = 0.1f;
+                        controller.speed = 0.1f; //2m/s (mass of 0,05kg)
                         if (fa.StepCount % (int)(fa.MaxStep / 10) == 0)
                         {
                             int random = Random.Range(0, 2) * 2 - 1;
@@ -96,7 +96,7 @@ public class Rewards_TT : MonoBehaviour
                     }
                 case Dificulty.ultra: // 20 times random direction
                     {
-                        controller.speed = 0.12f;
+                        controller.speed = 0.12f; //2.4m/s (mass of 0,05kg)
                         if (fa.StepCount % (int)(fa.MaxStep / 20) == 0)
                         {
                             int randomX = Random.Range(0, 2) * 2 - 1;
